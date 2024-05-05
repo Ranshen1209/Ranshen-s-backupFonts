@@ -33,3 +33,12 @@
 #### 注意
 
 1. 考虑到备份的大小和时间，脚本未提取super和cust分区，所以必要时需要再次刷入官方的线刷包。
+
+### 如何为其它机型做适配
+
+---
+
+1. adb shell连接需要做适配的机型
+2. 获取su权限
+3. ls /dev/block/bootdevice/by-name/
+4. 根据输出的内容修改extract_images.bat里的 partitions

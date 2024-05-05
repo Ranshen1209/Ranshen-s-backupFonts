@@ -1,5 +1,3 @@
-# Ranshen-s-backupFonts
-
 ## Marble Backup Script
 
 This script is specifically designed for Marble to back up all partitions except for the *cust* and *super* partitions.
@@ -35,3 +33,12 @@ This script is specifically designed for Marble to back up all partitions except
 #### Notes
 
 1. Considering the size and time required for backup, the script does not extract the *super* and *cust* partitions, so re-flashing the official firmware package may be necessary if required.
+
+### How to Adapt for Other Models
+
+---
+
+1. Connect to the device needing adaptation via `adb shell`.
+2. Obtain `su` (superuser) permissions.
+3. Run `ls /dev/block/bootdevice/by-name/`.
+4. Modify the partitions in *extract_images.bat* based on the output.
