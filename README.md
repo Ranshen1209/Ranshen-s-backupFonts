@@ -9,7 +9,7 @@ This script is specifically designed for Marble to back up all partitions except
 ---
 
 - [English](README.md)
-- [Chinese](README.zh.md)
+- [中文](README.zh.md)
 
 ### Usage Instructions
 
